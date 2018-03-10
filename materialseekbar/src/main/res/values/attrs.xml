@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="MaterialSeekBar">
+        <attr name="bubbleDrawable" format="reference"/>
+        <attr name="bubbleColor" format="color"/>
+        <attr name="bubblePadding" format="dimension"/>
+        <attr name="alwaysShowBubble" format="boolean"/>
+        <attr name="showBubbleAnimDuration" format="integer"/>
+        <attr name="hideBubbleAnimDuration" format="integer"/>
+
+        <attr name="progressTextSize" format="dimension"/>
+        <attr name="progressTextColor" format="color"/>
+
+        <attr name="minMaxTextSize" format="dimension"/>
+        <attr name="minTextColor" format="color"/>
+        <attr name="maxTextColor" format="integer"/>
+        <attr name="minMaxPadding" format="dimension"/>
+        <attr name="minMaxPosition" format="enum">
+            <enum name="middle" value="0"/>
+            <enum name="bottom" value="1"/>
+            <enum name="under" value="2"/>
+        </attr>
+        <attr name="showMinMax" format="boolean"/>
+
+        <attr name="android:min"/>
+        <attr name="android:max"/>
+    </declare-styleable>
+
+
+</resources>
