@@ -11,6 +11,7 @@ import android.graphics.Paint;
 import android.graphics.Rect;
 import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
+import android.os.Parcelable;
 import android.support.annotation.ColorRes;
 import android.support.annotation.DrawableRes;
 import android.support.annotation.IntRange;
@@ -90,6 +91,14 @@ public class MaterialSeekBar extends android.support.v7.widget.AppCompatSeekBar 
     public MaterialSeekBar(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         init(context, attrs);
+    }
+
+    @Override
+    public void onRestoreInstanceState(Parcelable state) {
+        super.onRestoreInstanceState(state);
+        if (!alwaysShowBubble) {
+            updateBubbleAlpha(0);
+        }
     }
 
     private void init(Context context, @Nullable AttributeSet attrs) {
