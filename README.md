@@ -19,7 +19,7 @@ Step 1. Add the JitPack repository to your build file
 Step 2.
 ```
   dependencies {
-	        compile 'com.github.R12rus:MaterialSeekBar:0.0.1'
+	        compile 'com.github.R12rus:MaterialSeekBar:0.0.2'
 	}
 ```
 
